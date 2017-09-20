@@ -6,6 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import com.jinpaihushi.jphs.worktime.model.Worktime;
 import com.jinpaihushi.jphs.worktime.service.WorktimeService;
 
 @Component
@@ -29,5 +30,7 @@ public class WorkTimeScheduled {
     @Scheduled(cron = "${test}")
     public void test() {
         System.out.println(111);
+        Worktime worktime = worktimeService.loadById("e349de54605647d58c293fcd239cef1a");
+        System.out.println(worktime.toString());
     }
 }
