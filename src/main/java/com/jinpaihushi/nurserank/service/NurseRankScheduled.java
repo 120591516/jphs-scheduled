@@ -33,7 +33,7 @@ public class NurseRankScheduled {
     @Autowired
     private NurseRankService nurseRankService;
 
-    @Scheduled(cron = "${updateNurseRank}")
+    @Scheduled(cron = "${test}")
     public void updateNurseRank() {
         try {
             String dateStr = sdf.format(new Date());
