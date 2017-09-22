@@ -13,6 +13,7 @@ import org.apache.commons.collections.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.jinpaihushi.jphs.nurse.model.NurseRank;
@@ -33,7 +34,7 @@ public class NurseRankScheduled {
     @Autowired
     private NurseRankService nurseRankService;
 
-    //    @Scheduled(cron = "${updateNurseRank}")
+    @Scheduled(cron = "${updateNurseRank}")
     @Transactional
     public void updateNurseRank() {
         try {
