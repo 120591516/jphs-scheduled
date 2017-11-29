@@ -63,6 +63,35 @@
 			<artifactId>jphs-order</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.jinpaihushi.jphs</groupId>
+			<artifactId>jphs-activity</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jinpaihushi.jphs</groupId>
+			<artifactId>jphs-shop</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jinpaihushi.jphs</groupId>
+			<artifactId>jphs-product</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jinpaihushi.jphs</groupId>
+			<artifactId>jphs-analysis</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jinpaihushi.jphs</groupId>
+			<artifactId>jphs-commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
