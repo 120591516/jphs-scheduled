@@ -8,8 +8,11 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 
 import com.jinpaihushi.jphs.account.model.Account;
 import com.jinpaihushi.jphs.account.service.AccountService;
@@ -23,9 +26,9 @@ import com.jinpaihushi.jphs.transaction.service.TransactionService;
 import com.jinpaihushi.utils.DoubleUtils;
 import com.jinpaihushi.utils.UUIDUtils;
 
-//@Component
-//@Configurable
-//@EnableScheduling
+@Component
+@Configurable
+@EnableScheduling
 public class OrderScheduled {
     protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
